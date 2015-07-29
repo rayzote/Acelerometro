@@ -34,16 +34,13 @@ function stopWatch(){
 //onSuccess: obtiene el resultado de la aceleración actual
 function onSuccess(acceleration){
 	var element = document.getElementById('accelerometer');
-	element.innerHTML = 'Aceleración X: ' + acceleration.x + '<br />' +
-						'Aceleración Y: ' + acceleration.y + '<br />' +
-						'Aceleración Z: ' + acceleration.z + '<br />' +
-						'Timestamp: '     + acceleration.timestamp + 'br />';
+	element.innerHTML = 'Aceleración X: ' + acceleration.x + '<br /> Aceleración Y: ' + acceleration.y + '<br />Aceleración Z: ' + acceleration.z + '<br />Timestamp: '     + acceleration.timestamp + 'br />';
 	}
 
 function onError(){
 	alert('onError!'+error);
 	}
-
+</script>
 <style type="text/css">
 	p{
 		text-align:center;
